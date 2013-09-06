@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <title>Web sockets test</title>
+    <script src="JavaScript/jquery-1.8.2.min.js"></script>
+    <script src="JavaScript/MyJS.js"></script>
+    <style type="text/css">
+        .container {
+            font-family: "Courier New";
+            width: 680px;
+            height: 300px;
+            overflow: auto;
+            border: 1px solid black;
+        }
+        .width {
+            width: 55px;
+        }
+   
+   </style>
+</head>
+<body>
+        <h1>Web Socket</h1>
+        <br />
+        服务器地址: <input type="text" id="Connection" /> 用户名： <input type="text" id="txtName" value="aasswwe"/>
+        <input id='ToggleConnection' type="button" value="连接" onclick='ToggleConnectionClicked();' />
+        <input id='Button1' type="button" value="清除消息" onclick='ClearMsg();' />
+        <input id='Button2' type="button" value="准备" onclick='SendPlan();' />
+        <br />
+        <br />
+        <div style="float:left;height: 380px; width: 200px;overflow: auto;border: 1px solid black;" id="UserList">
+        </div>
+        <div style="float:left; margin-left:10px;">
+            <div id="SpeakUserName" style="height: 20px;border: 1px solid black;">自由发言时间...</div>
+        <div id='LogContainer' class='container'></div>
+       <div  style="border: 1px solid black;height:40px;">
+        <div id='SendDataContainer'>
+        <input type="text" id="DataToSend" size="88" />
+        <input id='SendData' type="button" onclick='SendMsg();' value="发送"/>
+        </div>
+        </div>
+        <br />
+        </div>
+        <div style="float:left; margin-left:10px; border: 1px solid black;height: 293px; width: 300px;" id="ChangeContainer">
+             <br />
+             当前题目:<input type="text" readonly="readonly" id="title" style="width: 116px" />
+             <br />
+             <input type="button" value="自杀" style="height: 32px; width: 129px;" id="KillMe" onclick="SendKillMe()"/><br />
+             <br />
+             <input type="text" id="guessTxt" style="width: 145px" /> <input type="button" value="猜题" id="guessBtn" onclick="SendGuessTitle()"/><br />
+             <br />
+             <select id="Select1">
+                 <option >请选择</option>
+             </select>
+             <input type="button" value="投票" id="sendNote" onclick="SendVoteUser()"/><br />
+             <br />
+           <div id="host">
+             平民题目：<input type="text" id="people" class="width" /> 人数：<input type="text" id="peopleNum" class="width"/>人
+             <br />
+             卧底题目：<input type="text" id="ghost" class="width"/> 人数：<input type="text" id="ghostNum" class="width"/>人
+             <br />
+               白痴人数：<input type="text" id="XiaoBai" class="width"/>人
+             <br />
+            <input type="button" value="出题" onclick="SendTitle()" id="sendTitle"/>
+            <input type="button" value="开始" onclick="SendStartGame()" id="startGame"/>
+            <input type="button" value="清除题目" onclick="SendClearTitle()" id="ClearTitle"/>
+          </div>
+        </div>
+
+        <input type="hidden" id="gameType" value="_loginOut"/>
+
+</body>
+</html>
+
+
