@@ -1,0 +1,4 @@
+F:\project_cw\Wpf\Common\bin\Debug\Common.dll
+F:\project_cw\Wpf\Common\bin\Debug\Common.pdb
+F:\project_cw\Wpf\Common\obj\Debug\Common.dll
+F:\project_cw\Wpf\Common\obj\Debug\Common.pdb
