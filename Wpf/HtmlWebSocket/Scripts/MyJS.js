@@ -1,7 +1,7 @@
 ﻿var ws;
 var SocketCreated = false;
 var isUserloggedout = false;
-
+//
 $(function () {
    
     var webSocketsExist = true;
