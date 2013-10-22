@@ -1,5 +1,0 @@
-F:\project_cw\Wpf\HtmlWebSocket\bin\HtmlWebSocket.dll
-F:\project_cw\Wpf\HtmlWebSocket\bin\HtmlWebSocket.pdb
-F:\project_cw\Wpf\HtmlWebSocket\obj\Debug\HtmlWebSocket.dll
-F:\project_cw\Wpf\HtmlWebSocket\obj\Debug\HtmlWebSocket.pdb
-F:\project_cw\Wpf\HtmlWebSocket\obj\Debug\HtmlWebSocket.csprojResolveAssemblyReference.cache
